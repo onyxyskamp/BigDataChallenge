@@ -32,6 +32,8 @@
 #------------------------------PACKAGE DOWNLOAD---------------------------------
 
 # This is a list of all the packages used for thess analyses
+#
+install.packages("tidyverse")
 
 #---------------------------------LIBRARIES-------------------------------------
 
