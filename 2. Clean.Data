@@ -1,0 +1,38 @@
+################################################################################
+
+#                                 DATA CLEANING                                #
+
+################################################################################
+
+#Load in Data
+raw.data <- read.csv("Raw.Bison.Data.csv")
+head(raw.data)
+
+#install a package
+install.packages("tidyverse")
+
+#make a data frame including only the relevent colums and check that it worked
+bison<-data.frame(raw.data$Elevation..ASL..m, Bison$Long, Bison$Lat,
+      Bison$GISP2.Temp..IntCal13., Bison$DstL)
+head(bison)
+
+#rename the colums to make them more usable and check that it works
+names(bison)[names(bison)== "Bison.Elevation..ASL..m"] <- "elev"
+names(bison)[names(bison)== "Bison.Long"] <- "long"
+names(bison)[names(bison)== "Bison.Lat"] <- "lat"
+names(bison)[names(bison)== "Bison.GISP2.Temp..IntCal13."] <- "temp"
+names(bison)[names(bison)== "Bison.DstL"] <- "dstl"
+head(bison)
+
+
+#A function for deleting rows containing NA in specific columns
+col.na.del <- function(data, na.in.col) {
+  des.col <- complete.cases(data[, na.in.col])
+  return(data[des.col, ])
+}
+
+#remove all NA from the dstl column 
+col.na.del(bison, "dstl")
+
+write.csv(col.na.del, paste(cd.path, "Clean.Data.csv"),
+          row.names = FALSE)
