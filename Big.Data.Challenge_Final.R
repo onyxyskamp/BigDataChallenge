@@ -102,3 +102,82 @@ an.path <- paste(working.dir,"/",output.folders[3], "/", sep="")
 gr.path <- paste(working.dir,"/",output.folders[4], "/", sep="")
 
 
+
+
+
+
+
+
+# attempt to make a for loop of the data. 
+print(bis)
+
+dat.3 <- cbind.data.frame(name= c("mass", "dstl", "elev"), values= bis$mass, bis$dstl,                        bis$elev) #organize the data for the for loop 
+print(dat.3 )                      
+names.2 <- unique(dat.3$name)
+print(names.2)
+
+store <- rep(NA, length(names.2$values)# store the data 
+print(store)
+
+
+for(i in 1:length(names.2)){
+  
+  print(i)
+  d.t <- dat.3[dat.3$name == names.2[i],]
+  store[i] <- sum(dat.3$values)/ nrow(dat.3)
+  print(names.2[i])
+}
+
+
+
+columns.compare <- c(bis$long, bis$elev, bis$temp) # Y axis 
+
+print(columns.compare)
+
+M <- c(bis$mass) #x axis 
+print(M)
+
+for(i in 1:length(columns.compare)-1){
+  lm(bis[,1]~bis[,columns.compare[i+1]])
+}
+
+p
+
+bis <- read.csv("~/Desktop/Data using R /RFiles&Data /BDC/2.Clean.Data/bis.csv")
+
+head(bis)
+
+names(bis)[names(bis)== "elev"] <- "Elevation"
+names(bis)[names(bis)== "long"] <- "Longitude"
+names(bis)[names(bis)== "lat"] <- "Lattitude"
+names(bis)[names(bis)== "temp"] <- "Tempreture"
+
+expl.variable <- c(2,3,4,5)
+var.names <- colnames(bis)[expl.variable]
+
+
+regr.results <- cbind.data.frame(intercept = rep(NA, length(expl.variable)), 
+                                 coeffic = rep(NA, length(expl.variable)))
+
+for(i in 1:4){
+  
+  #i <- 1
+  model.t <- lm(bis$mass ~ bis[, expl.variable[i]] )
+  regr.results[i,]  <- model.t$coefficients
+  
+  pdf(paste(i,".",var.names[i], ".pdf", sep = ""), width = 5, height = 5)
+  plot(bis[, expl.variable[i]], bis$mass, main = var.names[i], ylab = "Mass", 
+       xlab= var.names[i])
+  dev.off
+  
+}
+
+
+
+
+
+
+
+
+
+
