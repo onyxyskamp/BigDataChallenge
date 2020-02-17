@@ -39,11 +39,11 @@ install.packages("tidyverse")
 ---------------------------------LIBRARIES-------------------------------------
 
 library (tidyverse)
-#--------------------------------DATA DOWLOAD-----------------------------------
 
-# The raw data file was originally found from:
-#     https://datadryad.org/stash/dataset/doi:10.5061/dryad.hp
-# 38ct1?fbclid=IwAR2T0qNARXX80OK_fTSZ2B1B3hP4Wr2rCm9BawzTMmfgRSiTTihqGu3mZPM  
-# The datasheet was then downloaded as a csv file. When downloading this 
-# dataset as a csv, we saved the first worksheet titled Osteometrics. 
+--------------------------------DATA DOWLOAD-----------------------------------
+
+The raw data file was originally found from:
+     https://datadryad.org/stash/dataset/doi:10.5061/dryad.hp38ct1?fbclid=IwAR2T0qNARXX80OK_fTSZ2B1B3hP4Wr2rCm9BawzTMmfgRSiTTihqGu3mZPM 
+     
+The dataset was downloaded as a csv file. We saved the first worksheet titled Osteometrics. 
   
