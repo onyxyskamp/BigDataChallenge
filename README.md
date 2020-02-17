@@ -14,18 +14,24 @@
 
 ---------------------------------OVERVIEW--------------------------------------
 
-#The following contents within this main directory include the packages, 
-#libraries, dataset and the workflow that is used in this analysis. For the 
-#purpose of this analysis the scripts should be run in the folling order to gain 
-#replicatory results:
+The following contents within this main directory include the packages, 
+libraries, dataset and the workflow that is used in this analysis. 
 
-#    1. MainScript:(Data organization with the overview of the workflow used
-#                   in this project)
-#
-#    2. DataCleaning: (How to clean the data that is used for these analyses)
-#
-#
-#    3. DataAnalysis: WE NEED TO DESCRIBE THIS 
+The scripts should be run in the folling order to gain replicatory results:
+
+    1. MainScript.R
+    
+    (Data organization with the overview of the workflow used
+                   in this project)
+
+    2. Data.Cleaning.R
+    
+    (How to clean the data that is used for these analyses)
+
+
+    3. Analysis.Graphs.R
+    
+    WE NEED TO DESCRIBE THIS 
 
 #------------------------------PACKAGE DOWNLOAD---------------------------------
 
