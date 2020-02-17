@@ -14,8 +14,8 @@
 #Change the names of the headers so that the x axis reads nicely. 
 names(bis)[names(bis)== "elev"] <- "Elevation"
 names(bis)[names(bis)== "long"] <- "Longitude"
-names(bis)[names(bis)== "lat"] <- "Lattitude"
-names(bis)[names(bis)== "temp"] <- "Tempreture"
+names(bis)[names(bis)== "lat"] <- "Latitude"
+names(bis)[names(bis)== "temp"] <- "Temperature"
 
 # Here is code that needed to be run in order to store the graphs in the 
 # correct folder
