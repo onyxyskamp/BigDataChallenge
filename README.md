@@ -39,7 +39,7 @@ install.packages("tidyverse")
 
 library (tidyverse)
 
---------------------------------DATA DOWLOAD-----------------------------------
+--------------------------------DATA DOWNLOAD-----------------------------------
 
 The raw data file was originally found from:
      https://datadryad.org/stash/dataset/doi:10.5061/dryad.hp38ct1?fbclid=IwAR2T0qNARXX80OK_fTSZ2B1B3hP4Wr2rCm9BawzTMmfgRSiTTihqGu3mZPM 
