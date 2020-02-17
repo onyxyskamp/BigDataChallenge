@@ -57,7 +57,7 @@ working.dir <- getwd()
 # This should be set to the working directory of
 # the "BigDataChallenge_Master" folder after downloading this repo. 
 
-raw.data <- read.csv("Raw.Data")
+raw.data <- read.csv("Raw.Data.csv")
 
 #-----------------------------------WORKFLOW------------------------------------
 
