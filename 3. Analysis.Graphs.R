@@ -13,7 +13,7 @@
 
 #Change the names of the headers so that the x axis reads nicely. 
 names(bis)[names(bis)== "elev"] <- "Elevation"
-names(bis)[names(bis)== "long"] <- "Longitude"
+names(bis)[names(bis)== "long"] <- "Longitud"
 names(bis)[names(bis)== "lat"] <- "Latitude"
 names(bis)[names(bis)== "temp"] <- "Temperature"
 
@@ -24,7 +24,7 @@ output.folders <- c("1.Raw.Data","2.Clean.Data","3.Analysis","4.Graphs")
 gr.path <- paste(working.dir,"/",output.folders[4], "/", sep="")
 
 #Here are our variables 
-expl.variable <- c(2,3,4,5) #The position of each explanatory column 
+expl.variable <- c(1,2,3,4) #The position of each explanatory column 
 # (elevation=2 etc.)
 var.names <- colnames(bis)[expl.variable] #here is where the names are assigned 
 # to the postion 
@@ -48,3 +48,6 @@ for(i in 1:4){ #for loop 1 through 4 because we have 4 postions
   dev.off() #close pdf 
 }
 
+#Here is where the we put all our results in our results folder. 
+table <- data.frame(regr.results)
+write.csv(table, paste(an.path, "results.csv"))
