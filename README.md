@@ -21,17 +21,16 @@ The scripts should be run in the folling order to gain replicatory results:
 
     1. MainScript.R
     
-    (Data organization with the overview of the workflow used
-                   in this project)
+    (Reads raw data file and creates output folders where graphs will be saved )
 
     2. Data.Cleaning.R
     
-    (How to clean the data that is used for these analyses)
+    (Deletes missing data points, renames columns and creates mass columns)
 
 
     3. Analysis.Graphs.R
     
-    WE NEED TO DESCRIBE THIS 
+    (runs regression analysis between the dependent variable (mass) and the explanatory variables, saves regrssions results, generates graphs and stores them in correct folders)
 
 #------------------------------PACKAGE DOWNLOAD---------------------------------
 
