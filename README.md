@@ -10,14 +10,13 @@
 - Packages downloaded
 - Libraries
 - Data Download 
-- Workflow 
 
 ---------------------------------OVERVIEW--------------------------------------
 
 The following contents within this main directory include the packages, 
 libraries, dataset and the workflow that is used in this analysis. 
 
-The scripts should be run in the folling order to gain replicatory results:
+The scripts should be run in the folling order to gain replicatory results. This also serves as our workflow.
 
     1. MainScript.R
     
