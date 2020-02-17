@@ -8,8 +8,8 @@
 
 #First, make a data frame including only the relevent colums and check 
 #that it worked using the head function 
-bison<-data.frame(Bison$Elevation..ASL..m, Bison$Long, Bison$Lat,
-                  Bison$GISP2.Temp..IntCal13., Bison$DstL)
+bison<-data.frame(raw.data$Elevation..ASL..m, raw.data$Long, raw.data$Lat,
+                  raw.data$GISP2.Temp..IntCal13., raw.data$DstL)
 head(bison)
 str(bison)
 
