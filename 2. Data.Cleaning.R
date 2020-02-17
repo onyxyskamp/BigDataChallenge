@@ -19,11 +19,11 @@ biso <- na.omit(bison)
 str(biso)
 
 #Rename the columns to make them more usable and check that it works
-names(biso)[names(biso)== "Bison.Elevation..ASL..m"] <- "elev"
-names(biso)[names(biso)== "Bison.Long"] <- "long"
-names(biso)[names(biso)== "Bison.Lat"] <- "lat"
-names(biso)[names(biso)== "Bison.GISP2.Temp..IntCal13."] <- "temp"
-names(biso)[names(biso)== "Bison.DstL"] <- "dstl"
+names(biso)[names(biso)== "raw.data.Elevation..ASL..m"] <- "elev"
+names(biso)[names(biso)== "raw.data.Long"] <- "long"
+names(biso)[names(biso)== "raw.data.Lat"] <- "lat"
+names(biso)[names(biso)== "raw.data.GISP2.Temp..IntCal13."] <- "temp"
+names(biso)[names(biso)== "raw.data.DstL"] <- "dstl"
 head(biso)
 
 #Find the number of rows contained in dstl (needed to convert dstl to mass)
