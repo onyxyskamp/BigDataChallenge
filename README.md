@@ -36,10 +36,9 @@ The scripts should be run in the folling order to gain replicatory results:
 
 install.packages("tidyverse")
 
-#---------------------------------LIBRARIES-------------------------------------
+---------------------------------LIBRARIES-------------------------------------
 
-# Load the packages in the libraries 
-
+library (tidyverse)
 #--------------------------------DATA DOWLOAD-----------------------------------
 
 # The raw data file was originally found from:
