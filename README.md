@@ -32,9 +32,9 @@ The scripts should be run in the folling order to gain replicatory results:
     
     (runs regression analysis between the dependent variable (mass) and the explanatory variables, saves regrssions results, generates graphs and stores them in correct folders)
 
-#------------------------------PACKAGE DOWNLOAD---------------------------------
+------------------------------PACKAGE DOWNLOAD---------------------------------
 
-# This is a list of all the packages used for thess analyses
+install.packages("tidyverse")
 
 #---------------------------------LIBRARIES-------------------------------------
 
