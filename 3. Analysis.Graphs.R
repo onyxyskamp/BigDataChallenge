@@ -29,7 +29,7 @@ expl.variable <- c(2,3,4,5) #The position of each explanatory column
 var.names <- colnames(bis)[expl.variable] #here is where the names are assigned 
 # to the postion 
 
-# Here is where we run the regretion and get the results. 
+# Here is where we run the regression and get the results. 
 regr.results <- cbind.data.frame(intercept = rep(NA, length(expl.variable)), 
                                  coeffic = rep(NA, length(expl.variable)))
 
