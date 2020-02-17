@@ -52,7 +52,7 @@ working.dir <- getwd()
 # This should be set to the working directory of
 # the "Big_Data_Challenge_Emery_Onyx_Salma_Will" folder 
 
-raw.data <- read.csv("Raw.Data")
+raw.data <- read.csv("Raw.Data.csv")
 
 #-----------------------------------WORKFLOW------------------------------------
 
