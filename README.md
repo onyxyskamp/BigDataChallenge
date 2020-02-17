@@ -4,7 +4,7 @@
 
 - Project for Quest- Data analysis in R class 
 
-#----------------------------TABLE OF CONTENTS----------------------------------
+----------------------------TABLE OF CONTENTS----------------------------------
 
 - Overview
 - Packages downloaded
@@ -12,7 +12,7 @@
 - Data Download 
 - Workflow 
 
-#---------------------------------OVERVIEW--------------------------------------
+---------------------------------OVERVIEW--------------------------------------
 
 #The following contents within this main directory include the packages, 
 #libraries, dataset and the workflow that is used in this analysis. For the 
