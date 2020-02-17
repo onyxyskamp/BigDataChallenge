@@ -6,13 +6,11 @@
 
 #----------------------------TABLE OF CONTENTS----------------------------------
 
-# - Overview
-# - Packages downloaded
-# - Libraries
-# - Data Download 
-# - Workflow 
-
-################################################################################
+- Overview
+- Packages downloaded
+- Libraries
+- Data Download 
+- Workflow 
 
 #---------------------------------OVERVIEW--------------------------------------
 
